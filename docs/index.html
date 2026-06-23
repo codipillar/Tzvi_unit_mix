@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tzvi Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Tzvi Project</h1>
+      </header>
+
+      <main class="main">
+        <p class="format-note">
+          Please note that this system assumes the rent roll file follows the same format as previously provided.
+        </p>
+
+        <section id="table-panel" class="table-panel">
+          <div id="empty-state" class="empty-state">
+            <p>Upload <strong>rent roll file</strong> to display the Unit Mix table.</p>
+          </div>
+          <div id="table-container" class="table-container hidden"></div>
+        </section>
+
+        <section id="messages" class="messages" aria-live="polite"></section>
+      </main>
+
+      <footer class="chat-bar">
+        <label class="upload-btn" title="Upload rent roll">
+          <input id="file-input" type="file" accept=".xlsx,.xlsm" hidden />
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 16V4m0 0l-4 4m4-4l4 4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </label>
+
+        <input
+          id="chat-input"
+          class="chat-input"
+          type="text"
+          placeholder="Type a message..."
+          autocomplete="off"
+        />
+
+        <button id="send-btn" class="send-btn" type="button" title="Send">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="js/unit_mix.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
