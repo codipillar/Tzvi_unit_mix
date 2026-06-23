@@ -10,9 +10,9 @@ After deployment, the app is available at:
 
 `https://<your-github-username>.github.io/<repo-name>/`
 
-Example: `https://johndoe.github.io/Tzvi/`
+Example: `https://codipillar.github.io/Tzvi_unit_mix/`
 
-
+## Local development
 ### Option A — open static files (quickest)
 
 Open `docs/index.html` in a browser, or use any static file server:
