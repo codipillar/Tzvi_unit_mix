@@ -12,26 +12,6 @@ After deployment, the app is available at:
 
 Example: `https://johndoe.github.io/Tzvi/`
 
-## Deploy to GitHub Pages
-
-1. Create a new GitHub repository and push this project.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push to `main` (or `master`). The workflow in `.github/workflows/pages.yml` deploys the `docs/` folder automatically.
-5. Wait 1–2 minutes, then open the Pages URL shown in **Settings → Pages**.
-
-### First-time push
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Tzvi Unit Mix demo"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-## Local development
 
 ### Option A — open static files (quickest)
 
